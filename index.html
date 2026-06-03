@@ -3,457 +3,290 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Propuesta Estratégica - ASI Agencia Transnacional</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>Propuesta Estratégica de Posicionamiento Internacional - ASI</title>
   <style>
-    * {
+    body {
+      font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+      background-color: #ffffff;
+      color: #1e293b;
+      line-height: 1.6;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background: #0b0f16;
-      color: #e8edf5;
-      line-height: 1.7;
-      overflow-x: hidden;
-    }
-
-    .background-glow {
-      position: fixed;
-      width: 700px;
-      height: 700px;
-      background: radial-gradient(circle, rgba(0,119,255,0.15), transparent 70%);
-      top: -250px;
-      right: -200px;
-      z-index: 0;
-      pointer-events: none;
     }
 
     .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: auto;
-      position: relative;
-      z-index: 2;
+      width: 85%;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
     }
 
     header {
-      padding: 120px 0 90px;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
+      border-bottom: 2px solid #0f172a;
+      padding-bottom: 40px;
+      margin-bottom: 50px;
     }
 
     .eyebrow {
-      color: #5da9ff;
-      font-size: 14px;
-      letter-spacing: 2px;
+      color: #2563eb;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
       text-transform: uppercase;
-      margin-bottom: 20px;
-      font-weight: 600;
+      margin-bottom: 12px;
     }
 
     h1 {
-      font-size: 60px;
-      line-height: 1.05;
+      font-size: 42px;
+      color: #0f172a;
+      line-height: 1.2;
       font-weight: 800;
-      max-width: 900px;
-      margin-bottom: 30px;
+      margin: 0 0 20px 0;
     }
 
     .hero-text {
+      font-size: 18px;
+      color: #475569;
       max-width: 850px;
-      font-size: 20px;
-      color: #b4bfd1;
-    }
-
-    section {
-      padding: 90px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.06);
+      line-height: 1.6;
     }
 
     h2 {
-      font-size: 38px;
-      margin-bottom: 28px;
+      font-size: 26px;
+      color: #0f172a;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 10px;
+      margin-top: 50px;
+      margin-bottom: 24px;
       font-weight: 700;
     }
 
     h3 {
-      font-size: 24px;
-      margin-bottom: 16px;
-      color: #ffffff;
+      font-size: 18px;
+      color: #1e3a8a;
+      margin-top: 30px;
+      margin-bottom: 12px;
+      font-weight: 700;
     }
 
     p {
-      color: #c3cede;
-      margin-bottom: 20px;
-      font-size: 17px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 28px;
-      margin-top: 40px;
-    }
-
-    .card {
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 24px;
-      padding: 32px;
-      transition: 0.3s ease;
-      backdrop-filter: blur(10px);
-    }
-
-    .card:hover {
-      transform: translateY(-4px);
-      border-color: rgba(93,169,255,0.35);
-    }
-
-    .card p {
-      margin-bottom: 0;
       font-size: 15px;
+      color: #334155;
+      margin-bottom: 20px;
+      text-align: justify;
     }
 
-    ul {
-      margin-top: 20px;
+    ul, ol {
+      margin-bottom: 24px;
       padding-left: 20px;
     }
 
     li {
-      margin-bottom: 14px;
-      color: #c6d1df;
-    }
-
-    .highlight {
-      background: linear-gradient(135deg, rgba(0,119,255,0.12), rgba(0,119,255,0.03));
-      border: 1px solid rgba(93,169,255,0.25);
-      padding: 40px;
-      border-radius: 28px;
-      margin-top: 40px;
-    }
-
-    .quote {
-      font-size: 30px;
-      line-height: 1.4;
-      font-weight: 600;
-      color: #ffffff;
-      max-width: 950px;
-    }
-
-    .phases {
-      display: grid;
-      gap: 24px;
-      margin-top: 40px;
-    }
-
-    .phase {
-      padding: 30px;
-      border-left: 4px solid #5da9ff;
-      background: rgba(255,255,255,0.025);
-      border-radius: 18px;
-    }
-
-    .pricing {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 30px;
-      margin-top: 50px;
-    }
-
-    .price-card {
-      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 28px;
-      padding: 40px;
-    }
-
-    .price-card.featured {
-      border: 1px solid rgba(93,169,255,0.4);
-      box-shadow: 0 0 40px rgba(0,119,255,0.12);
-    }
-
-    .price {
-      font-size: 48px;
-      font-weight: 800;
-      margin: 20px 0;
-      color: #ffffff;
-    }
-
-    .small {
       font-size: 15px;
-      color: #9eabc0;
-    }
-
-    footer {
-      padding: 80px 0 120px;
-      text-align: center;
-    }
-
-    .final-message {
-      font-size: 28px;
-      font-weight: 600;
-      max-width: 900px;
-      margin: auto;
+      color: #334155;
+      margin-bottom: 10px;
       line-height: 1.5;
     }
 
-    @media(max-width: 768px){
-      h1 {
-        font-size: 42px;
-      }
+    .critical-box {
+      background-color: #f8fafc;
+      border-left: 4px solid #dc2626;
+      padding: 24px;
+      margin: 30px 0;
+      border-radius: 0 8px 8px 0;
+    }
 
-      h2 {
-        font-size: 30px;
-      }
+    .critical-box h3 {
+      color: #991b1b;
+      margin-top: 0;
+    }
 
-      .quote {
-        font-size: 24px;
-      }
+    .highlight-box {
+      background-color: #f0fdf4;
+      border-left: 4px solid #16a34a;
+      padding: 24px;
+      margin: 30px 0;
+      border-radius: 0 8px 8px 0;
+    }
 
-      .price {
-        font-size: 38px;
-      }
+    .highlight-box h3 {
+      color: #14532d;
+      margin-top: 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 30px 0 50px 0;
+    }
+
+    th {
+      background-color: #0f172a;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 600;
+      text-align: left;
+      padding: 14px 18px;
+      border: 1px solid #0f172a;
+    }
+
+    td {
+      padding: 16px 18px;
+      font-size: 14px;
+      color: #334155;
+      border: 1px solid #e2e8f0;
+      vertical-align: top;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f8fafc;
+    }
+
+    .price-tag {
+      font-size: 20px;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    footer {
+      margin-top: 80px;
+      padding-top: 30px;
+      border-top: 1px solid #e2e8f0;
+      text-align: center;
+      font-size: 13px;
+      color: #64748b;
     }
   </style>
 </head>
 <body>
-  <div class="background-glow"></div>
 
-  <header>
-    <div class="container">
-      <div class="eyebrow">PROPUESTA ESTRATÉGICA</div>
-      <h1>Posicionamiento Internacional y Fortalecimiento de Marca para ASI Agencia Transnacional</h1>
+  <div class="container">
+    
+    <header>
+      <div class="eyebrow">Posicionamiento Corporativo</div>
+      <h1>Desarrollo de Marca Internacional y Dirección Estratégica</h1>
       <p class="hero-text">
-        El objetivo de esta propuesta es desarrollar una estrategia integral de branding, posicionamiento y presencia digital que permita fortalecer la percepción de ASI como una empresa profesional, confiable y competitiva para el mercado internacional, especialmente en Estados Unidos.
+        Plan integral orientado a auditar, reestructurar y proyectar la presencia digital de ASI Agencia Transnacional. El objetivo central es alinear los activos de comunicación de la compañía con los estándares de exigencia corporativa del mercado B2B en los Estados Unidos.
       </p>
-    </div>
-  </header>
+    </header>
 
-  <section>
-    <div class="container">
-      <h2>Visión Estratégica</h2>
+    <section>
+      <h2>1. Misión y Visión del Proyecto</h2>
+      <h3>Misión de la Estrategia</h3>
+      <p>
+        Transformar la comunicación digital de ASI en una herramienta de validación comercial corporativa. No buscamos la generación de contenido masivo ni recreativo; el foco absoluto es construir un ecosistema digital bilingüe que transmita autoridad técnica, capacidad operativa transnacional y seguridad legal ante clientes institucionales extranjeros.
+      </p>
+      <h3>Visión de Posicionamiento</h3>
+      <p>
+        Evolucionar a ASI en una infraestructura de comunicación madura, limpia y competitiva. El propósito central es que cada activo digital actúe como una herramienta de validación comercial inmediata, logrando que cualquier aliado en el extranjero perciba, desde su primer contacto visual, una organización sólida, transparente y con la capacidad técnica necesaria para respaldar operaciones internacionales.
+      </p>
+    </section>
 
-      <div class="highlight">
-        <div class="quote">
-          “Las marcas no solo venden servicios. Construyen percepción, generan confianza y crean posicionamiento en la mente de las personas.”
-        </div>
-      </div>
-
-      <div style="margin-top:40px;">
+    <section>
+      <div class="critical-box">
+        <h3>2. Diagnóstico Técnico: Falencias y Bloqueos de Internacionalización</h3>
         <p>
-          Actualmente ASI ya cuenta con una base importante: presencia digital, sitio web, contenido bilingüe y una intención clara de expansión internacional. Sin embargo, existe una gran oportunidad de evolucionar la marca hacia una presencia mucho más sólida, estratégica y alineada con estándares corporativos internacionales.
+          Tras analizar la huella digital actual de la compañía, he identificado debilidades críticas en la comunicación visual y escrita que neutralizan el esfuerzo de expansión hacia el mercado estadounidense:
         </p>
+        <ul>
+          <li><strong>Línea gráfica genérica y de stock:</strong> El uso recurrente de composiciones prefabricadas y plantillas comunes reduce la percepción de valor. Una empresa transnacional requiere de un criterio visual unificado, texturas de marca propias y un manejo de espacios que denote sofisticación técnica.</li>
+          <li><strong>Limitación en recursos tipográficos y jerarquías:</strong> La falta de fuentes tipográficas con carácter corporativo y el uso incorrecto de jerarquías de lectura restan peso visual a los mensajes, haciendo que comunicados importantes luzcan como contenido amateur.</li>
+          <li><strong>Falta de profundidad en contenido técnico (Efecto "Contenido Vacío"):</strong> Las publicaciones e información actual tienden a ser conceptuales y obvias. El cliente B2B internacional busca datos concretos, entendimiento de normativas, flujos de procesos claros y demostración de experiencia real.</li>
+          <li><strong>Inglés plano o traducido literalmente:</strong> El mercado angloparlante corporativo detecta de inmediato el contenido traducido por software o redactado sin contexto cultural corporativo. Para conectar con tomadores de decisiones, la comunicación debe emplear la jerga técnica nativa de los negocios en EE. UU. (Business English), demostrando dominio absoluto de su terminología operativa.</li>
+        </ul>
+      </div>
+    </section>
 
+    <section>
+      <h2>3. Plan de Trabajo Desglosado</h2>
+      
+      <h3>Fase 1: Auditoría de Activos y Diagnóstico de Lenguaje</h3>
+      <p>
+        Análisis de toda la comunicación emitida en el último año. Evaluación de la usabilidad del sitio web actual, arquitectura de contenidos y mapeo tipográfico. Revisión técnica del nivel lingüístico de las plataformas en inglés.
+      </p>
+
+      <h3>Fase 2: Arquitectura del Mensaje B2B e Internacionalización</h3>
+      <p>
+        Definición de las matrices de argumentación comercial. Reescritura corporativa de perfiles institucionales de la empresa, estandarización de la terminología bilingüe y adaptación del tono de voz de la marca hacia un perfil sobrio, técnico y riguroso.
+      </p>
+
+      <h3>Fase 3: Rediseño Visual y Evolución de Identidad</h3>
+      <p>
+        Creación de un manual operativo de estilo para canales digitales. Esto incluye la selección e implementación de tipografías corporativas avanzadas, definición de paletas cromáticas de alto contraste, desarrollo de retículas de diseño exclusivas para LinkedIn y pautas de fotografía corporativa que eliminen el look genérico de stock.
+      </p>
+
+      <h3>Fase 4: Ingeniería de Contenidos y Autoridad</h3>
+      <p>
+        Conceptualización y redacción de piezas de alto valor técnico. Desarrollo de casos de estudio, análisis operativos de flujos transnacionales y artículos firmados por la dirección que demuestren que ASI comprende a fondo los problemas logísticos y legales de sus clientes.
+      </p>
+
+      <h3>Fase 5: Optimización del Ecosistema Corporativo (LinkedIn Premium Focus)</h3>
+      <p>
+        Reestructuración de la página de empresa en LinkedIn y asesoría en los perfiles de los directivos principales. El objetivo es que la presencia en esta red actúe como una carta de presentación institucional impecable ante búsquedas orgánicas o prospección directa en el extranjero.
+      </p>
+
+      <h3>Fase 6: Diseño de Material Comercial de Respaldo</h3>
+      <p>
+        Desarrollo técnico y estético de las herramientas que utiliza el equipo comercial: brochures interactivos, presentaciones de servicios en alta fidelidad y plantillas de reportes mensuales que sigan la misma línea premium internacional.
+      </p>
+    </section>
+
+    <section>
+      <h2>4. Estructura de Inversión y Alcances</h2>
+      <p>
+        A continuación se detallan los dos modelos de acompañamiento propuestos. Los honorarios reflejan la asignación de profesionales seniors en diseño de identidad B2B, estrategia de marcas institucionales y redactores corporativos bilingües.
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 45%;">Alcance del Servicio</th>
+            <th style="width: 27.5%;">Esquema 1: Consultoría y Posicionamiento</th>
+            <th style="width: 27.5%;">Esquema 2: Dirección e Implementación Integral</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Dirección de Arte y Diseño</strong></td>
+            <td>Evolución visual, aplicación de nuevas fuentes y lineamientos gráficos para canales digitales.</td>
+            <td>Diseño avanzado, producción visual a demanda, desarrollo gráfico continuo de informes y presentaciones comerciales.</td>
+          </tr>
+          <tr>
+            <td><strong>Copywriting Estratégico</strong></td>
+            <td>Redacción bilingüe de pilares de marca y supervisión de textos institucionales principales.</td>
+            <td>Redacción nativa en inglés corporativo para todos los canales, artículos especializados y contenido B2B profundo de manera constante.</td>
+          </tr>
+          <tr>
+            <td><strong>Canales Prioritarios</strong></td>
+            <td>LinkedIn corporativo y optimización estratégica de la comunicación general.</td>
+            <td>LinkedIn corporativo, perfiles de voceros clave de la empresa, soporte en comunicación web y materiales de venta.</td>
+          </tr>
+          <tr>
+            <td><strong>Consultoría Estratégica</strong></td>
+            <td>Sesión mensual de revisión de avances y alineación de marca.</td>
+            <td>Acompañamiento directivo semanal, análisis de respuesta de audiencia y ajustes tácticos en tiempo real.</td>
+          </tr>
+          <tr>
+            <td><strong>Inversión Mensual</strong></td>
+            <td><span class="price-tag">$4.500.000 COP</span><br><small style="color:#64748b;">Valor Mensual Propuesto</small></td>
+            <td><span class="price-tag">$8.000.000 COP</span><br><small style="color:#64748b;">Valor Mensual Propuesto</small></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="highlight-box">
+        <h3>Nota de Transparencia Comercial</h3>
         <p>
-          El objetivo no será únicamente publicar contenido en redes sociales, sino construir una percepción de marca capaz de transmitir autoridad, estabilidad, profesionalismo y diferenciación dentro de un mercado altamente competitivo.
+          Este planteamiento está diseñado bajo la premisa de que ASI no requiere una gestión tradicional de redes sociales, sino una intervención estructural en su reputación e identidad de negocio. Entendiendo la naturaleza de este proyecto, los entregables, el plan de trabajo y el esquema económico definitivo quedan completamente abiertos a revisión y ajuste directo, buscando calibrar la inversión de manera flexible según las prioridades de la empresa.
         </p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section>
-    <div class="container">
-      <h2>Oportunidades Detectadas</h2>
+    <footer>
+      <p>Propuesta Estratégica CONFIDENCIAL para ASI Agencia Transnacional • 2026</p>
+    </footer>
 
-      <div class="grid">
-        <div class="card">
-          <h3>Identidad Visual</h3>
-          <p>
-            La marca puede evolucionar hacia una presencia más premium, coherente y corporativa, generando una percepción más sólida frente a clientes internacionales.
-          </p>
-        </div>
+  </div>
 
-        <div class="card">
-          <h3>Contenido Estratégico</h3>
-          <p>
-            Parte del contenido actual se percibe genérico y poco diferenciador. Se requiere una estrategia más enfocada en autoridad, confianza y posicionamiento.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Presencia Internacional</h3>
-          <p>
-            Existe potencial real para conectar con clientes de Estados Unidos, pero es necesario fortalecer la comunicación visual, comercial y corporativa.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Credibilidad de Marca</h3>
-          <p>
-            Toda la presencia digital debe transmitir estabilidad, profesionalismo, transparencia y capacidad operativa internacional.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <h2>Objetivos del Proyecto</h2>
-
-      <ul>
-        <li>Fortalecer el posicionamiento de ASI como una marca internacional confiable y profesional.</li>
-        <li>Mejorar la percepción visual y corporativa de la empresa.</li>
-        <li>Desarrollar una estrategia de contenido más estratégica y diferenciada.</li>
-        <li>Fortalecer la presencia digital y la autoridad de marca.</li>
-        <li>Optimizar redes sociales y comunicación para conectar mejor con audiencias internacionales.</li>
-        <li>Incrementar la relevancia y recordación de marca a largo plazo.</li>
-        <li>Construir una identidad más sólida, consistente y alineada con objetivos de expansión.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <h2>Plan de Trabajo</h2>
-
-      <div class="phases">
-        <div class="phase">
-          <h3>Fase 1 — Diagnóstico y Análisis</h3>
-          <p>
-            Revisión de redes sociales, sitio web, comunicación actual, presencia digital, competencia y oportunidades estratégicas de posicionamiento.
-          </p>
-        </div>
-
-        <div class="phase">
-          <h3>Fase 2 — Estrategia de Posicionamiento</h3>
-          <p>
-            Definición de pilares de comunicación, tono de marca, diferenciación, enfoque estratégico y posicionamiento orientado al mercado estadounidense.
-          </p>
-        </div>
-
-        <div class="phase">
-          <h3>Fase 3 — Evolución Visual y Branding</h3>
-          <p>
-            Optimización de identidad visual, coherencia estética, lineamientos gráficos y fortalecimiento de percepción corporativa.
-          </p>
-        </div>
-
-        <div class="phase">
-          <h3>Fase 4 — Desarrollo de Contenido</h3>
-          <p>
-            Creación de contenido estratégico enfocado en autoridad, confianza, posicionamiento B2B, reconocimiento de marca y comunicación internacional.
-          </p>
-        </div>
-
-        <div class="phase">
-          <h3>Fase 5 — Presencia Digital y LinkedIn</h3>
-          <p>
-            Fortalecimiento de redes sociales y posicionamiento profesional en plataformas clave para networking y expansión internacional.
-          </p>
-        </div>
-
-        <div class="phase">
-          <h3>Fase 6 — Material Corporativo</h3>
-          <p>
-            Desarrollo de presentaciones, brochures, documentos institucionales y piezas visuales alineadas con la identidad y objetivos de la marca.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <h2>Responsabilidades y Alcance</h2>
-
-      <div class="grid">
-        <div class="card">
-          <h3>Branding & Dirección Visual</h3>
-          <p>
-            Evolución estética de la marca, coherencia visual, lineamientos gráficos y fortalecimiento de identidad corporativa.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Marketing Estratégico</h3>
-          <p>
-            Desarrollo de estrategias orientadas al posicionamiento, reconocimiento y fortalecimiento de marca.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Contenido y Comunicación</h3>
-          <p>
-            Desarrollo de contenido bilingüe, comunicación corporativa y mensajes estratégicos para audiencias internacionales.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Presencia Digital</h3>
-          <p>
-            Optimización visual y estratégica de redes sociales, LinkedIn y canales digitales de la empresa.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <h2>Propuesta Económica</h2>
-
-      <div class="pricing">
-        <div class="price-card featured">
-          <h3>Propuesta Estratégica de Posicionamiento</h3>
-          <div class="price">$4.500.000 COP</div>
-          <p class="small">Valor mensual</p>
-
-          <ul>
-            <li>Estrategia de posicionamiento y fortalecimiento de marca.</li>
-            <li>Dirección visual y branding corporativo.</li>
-            <li>Desarrollo de contenido estratégico.</li>
-            <li>Comunicación bilingüe y presencia internacional.</li>
-            <li>Optimización de redes sociales y LinkedIn.</li>
-            <li>Material visual y apoyo corporativo.</li>
-          </ul>
-
-          <p style="margin-top:24px;">
-            El alcance final puede ajustarse y negociarse de acuerdo con las necesidades específicas, prioridades y objetivos estratégicos de la empresa.
-          </p>
-        </div>
-
-        <div class="price-card">
-          <h3>Dirección Estratégica Integral</h3>
-          <div class="price">$8.000.000 COP</div>
-          <p class="small">Valor mensual</p>
-
-          <ul>
-            <li>Desarrollo intensivo de posicionamiento internacional.</li>
-            <li>Mayor enfoque en crecimiento y expansión de marca.</li>
-            <li>Producción estratégica avanzada de contenido.</li>
-            <li>Soporte creativo y corporativo más amplio.</li>
-            <li>Fortalecimiento continuo de presencia digital y comercial.</li>
-            <li>Mayor acompañamiento estratégico y ejecución constante.</li>
-          </ul>
-
-          <p style="margin-top:24px;">
-            Esta propuesta contempla un nivel de involucramiento estratégico más amplio y un acompañamiento integral en el desarrollo y evolución de la marca.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <div class="final-message">
-        El posicionamiento de marca no es un proceso inmediato, pero sí una necesidad estratégica para empresas que buscan crecer, mantenerse relevantes y generar confianza dentro de mercados altamente competitivos como Estados Unidos.
-      </div>
-    </div>
-    <div style="margin-top:60px; opacity:0.9;">
-        <p style="font-size:18px; color:#ffffff; font-weight:600; margin-bottom:6px;">
-          David López Villegas
-        </p>
-        <p style="font-size:15px; color:#9eabc0;">
-          Diseñador Gráfico • Branding & Digital Strategy • Dirección Creativa y Posicionamiento de Marca
-        </p>
-      </div>
-    </div>
-  </footer>
 </body>
 </html>
